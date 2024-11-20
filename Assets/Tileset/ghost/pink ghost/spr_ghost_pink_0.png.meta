@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      spr_ghost_pink_0_0: 2545820205326257244
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

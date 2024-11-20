@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      spr_afraid_0_0: 117484537882629438
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
