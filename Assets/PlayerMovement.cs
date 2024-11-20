@@ -18,22 +18,22 @@ public class PlayerMovement : MonoBehaviour
     void Update()
     {
         if (Input.GetKey("d")){
-            movement = new Vector2(1,0);
+            movement = new Vector2(5,0);
             transform.localRotation = Quaternion.Euler(0, 0, 0);
 
         }
         if (Input.GetKey("a")){
-            movement = new Vector2(-1,0);
+            movement = new Vector2(-5,0);
             transform.localRotation = Quaternion.Euler(0, 0, 180);
 
         }
         if (Input.GetKey("w")){
-            movement = new Vector2(0,1);
+            movement = new Vector2(0,5);
             transform.localRotation = Quaternion.Euler(0, 0, 90);
 
         }
         if (Input.GetKey("s")){
-            movement = new Vector2(0,-1);
+            movement = new Vector2(0,-5);
             transform.localRotation = Quaternion.Euler(0, 0, 270);
 
         }
