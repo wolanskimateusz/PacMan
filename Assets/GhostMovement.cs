@@ -8,8 +8,6 @@ public class GhostMovement : MonoBehaviour
     private Vector2 movement;
     private Rigidbody2D rb;
     private SpriteRenderer sprite;
-    public float changeDirectionTime = 2f;
-    private float timer;
     
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -22,19 +20,17 @@ public class GhostMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        rb.MovePosition(rb.position+movement * Time.fixedDeltaTime);
-        timer -= Time.fixedDeltaTime;
+         
         int dir = Random.Range(0, 4);
-        if(timer <= 0f)
+        rb.MovePosition(rb.position+movement * Time.fixedDeltaTime);
+        switch (dir)
         {
-            switch (dir)
-            {
-                case 0: movement = new Vector2(0, 1); break;
-                case 1: movement = new Vector2(0, -1); break;
-                case 2: movement = new Vector2(1, 0); break;
-                case 3: movement = new Vector2(-1, 0); break;
-            }
+            case 0: movement = new Vector2(0, 1); break;
+            case 1: movement = new Vector2(0, -1); break;
+            case 2: movement = new Vector2(1, 0); break;
+            case 3: movement = new Vector2(-1, 0); break;
         }
+        
       
         
     }

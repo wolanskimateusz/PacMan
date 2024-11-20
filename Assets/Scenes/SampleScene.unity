@@ -2448,11 +2448,7 @@ Tilemap:
   m_TileSpriteArray:
   - m_RefCount: 0
     m_Data: {fileID: 0}
-<<<<<<< HEAD
-  - m_RefCount: 19
-=======
   - m_RefCount: 17
->>>>>>> 81cd2c215db30d19a12d79c176fad6d623706092
     m_Data: {fileID: -284314186, guid: bbf7cc5c6befa5a4fae29feeb7b4a6e2, type: 3}
   - m_RefCount: 16
     m_Data: {fileID: -2036070164, guid: bbf7cc5c6befa5a4fae29feeb7b4a6e2, type: 3}
@@ -2502,17 +2498,8 @@ Tilemap:
     m_Data: {fileID: -306356182, guid: bbf7cc5c6befa5a4fae29feeb7b4a6e2, type: 3}
   - m_RefCount: 1
     m_Data: {fileID: -210898825, guid: bbf7cc5c6befa5a4fae29feeb7b4a6e2, type: 3}
-<<<<<<< HEAD
-  - m_RefCount: 2
-    m_Data: {fileID: 223830607, guid: bbf7cc5c6befa5a4fae29feeb7b4a6e2, type: 3}
-  - m_RefCount: 1
-    m_Data: {fileID: 1174810838, guid: bbf7cc5c6befa5a4fae29feeb7b4a6e2, type: 3}
-  - m_RefCount: 1
-    m_Data: {fileID: 625116693, guid: bbf7cc5c6befa5a4fae29feeb7b4a6e2, type: 3}
-=======
   - m_RefCount: 0
     m_Data: {fileID: 0}
->>>>>>> 81cd2c215db30d19a12d79c176fad6d623706092
   - m_RefCount: 1
     m_Data: {fileID: 1174810838, guid: bbf7cc5c6befa5a4fae29feeb7b4a6e2, type: 3}
   - m_RefCount: 1
@@ -2860,11 +2847,7 @@ GameObject:
   - component: {fileID: 1877520132}
   - component: {fileID: 1877520133}
   m_Layer: 0
-<<<<<<< HEAD
-  m_Name: Pac-man
-=======
   m_Name: Circle
->>>>>>> 81cd2c215db30d19a12d79c176fad6d623706092
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2973,11 +2956,7 @@ Transform:
   m_GameObject: {fileID: 1877520127}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-<<<<<<< HEAD
-  m_LocalPosition: {x: -4.88, y: 8.23, z: 0}
-=======
   m_LocalPosition: {x: -8.32, y: 10.36, z: 0}
->>>>>>> 81cd2c215db30d19a12d79c176fad6d623706092
   m_LocalScale: {x: 2, y: 2, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
