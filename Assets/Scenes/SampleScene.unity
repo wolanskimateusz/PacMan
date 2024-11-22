@@ -3255,7 +3255,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 1
-  m_Sprite: {fileID: 2682295684524043211, guid: 461625375eafa224bbc9fbe7e84454d6, type: 3}
+  m_Sprite: {fileID: -854346276578218440, guid: 732b8825d652888409ff9857f847b357, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -3293,6 +3293,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3cd188fd2606a9449a345fa1eb8bcf65, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sprites:
+  - {fileID: 967018795972314641, guid: 39e912542add8354baa6f0adc04a80b9, type: 3}
+  - {fileID: -6116695336936236789, guid: 81297b7126573524ca9fb4ed6dc25de8, type: 3}
+  - {fileID: -854346276578218440, guid: 732b8825d652888409ff9857f847b357, type: 3}
+  animationTime: 0.25
+  loop: 1
 --- !u!58 &1877520133
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -3337,14 +3343,14 @@ Rigidbody2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1877520127}
-  m_BodyType: 1
+  m_BodyType: 0
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 0.51
+  m_Mass: 1
   m_LinearDamping: 0
-  m_AngularDamping: 0.05
-  m_GravityScale: 1
+  m_AngularDamping: 0
+  m_GravityScale: 0
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
