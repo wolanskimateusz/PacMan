@@ -1,47 +1,65 @@
 using UnityEngine;
-
+[RequireComponent(typeof(Rigidbody2D))]
 public class PlayerMovement : MonoBehaviour
 {
+    public float speed = 8.0f;
+    public Vector2 initialDiretion;
+    public Vector2 direction;
+    public Vector2 nextDirection;
+    public LayerMask walls;
 
-    private Vector3 movement;
-    private SpriteRenderer sprite;
     private Rigidbody2D rb;
-    public bool canMove;
 
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
-       sprite = GetComponent<SpriteRenderer>();
-       canMove = true;
     }
-
-    // Update is called once per frame
     void Update()
     {
-        
-        if (Input.GetKey("d")){
-            movement = new Vector3(3,0,0);
-            transform.localRotation = Quaternion.Euler(0, 0, 0);
 
+        if (Input.GetKeyDown(KeyCode.W)){
+            this.SetDirection(Vector2.up);
         }
-        if (Input.GetKey("a")){
-            movement = new Vector3(-3,0,0);
-            transform.localRotation = Quaternion.Euler(0, 0, 180);
+        else if (Input.GetKeyDown(KeyCode.S)){
+            this.SetDirection(Vector2.down);
+        }
+        else if (Input.GetKeyDown(KeyCode.A)){
+            this.SetDirection(Vector2.left);
+        }
+        else if (Input.GetKeyDown(KeyCode.D)){
+            this.SetDirection(Vector2.right);
+        }
 
-        }
-        if (Input.GetKey("w")){
-            movement = new Vector3(0,3,0);
-            transform.localRotation = Quaternion.Euler(0, 0, 90);
 
+        if (this.nextDirection != Vector2.zero)
+        {
+            SetDirection(this.nextDirection);
         }
-        if (Input.GetKey("s")){
-            movement = new Vector3(0,-3,0);
-            transform.localRotation = Quaternion.Euler(0, 0, 270);
-
-        }
-        rb.MovePosition(transform.position+movement * Time.fixedDeltaTime);
-    
-        
     }
+    void FixedUpdate()
+    {
+        Vector2 position = this.rb.position;
+        this.rb.MovePosition(this.direction * this.speed * Time.fixedDeltaTime);
+    }
+
+    public void SetDirection(Vector2 direction)
+    {
+        if (!Occupied(direction))
+        {
+            this.direction = direction;
+            this.nextDirection = Vector2.zero;
+        }
+        else
+        {
+            this.nextDirection = direction;
+        }
+    }
+
+    public bool Occupied(Vector2 direction)
+    {
+        RaycastHit2D hit = Physics2D.BoxCast(this.transform.position,Vector2.one * 0.75f,0.0f,direction, 1.5f, this.walls);
+        return hit.collider !=null;
+    }
+
+    
 }
