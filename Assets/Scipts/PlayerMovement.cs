@@ -30,6 +30,9 @@ public class PlayerMovement : MonoBehaviour
             this.SetDirection(Vector2.right);
         }
 
+        float angle = Mathf.Atan2(this.direction.y,this.direction.x);
+
+        this.transform.rotation = Quaternion.AngleAxis(angle * Mathf.Rad2Deg,Vector3.forward);
 
         if (this.nextDirection != Vector2.zero)
         {
@@ -39,7 +42,8 @@ public class PlayerMovement : MonoBehaviour
     void FixedUpdate()
     {
         Vector2 position = this.rb.position;
-        this.rb.MovePosition(this.direction * this.speed * Time.fixedDeltaTime);
+        this.rb.MovePosition(position + this.direction * this.speed * Time.fixedDeltaTime);
+
     }
 
     public void SetDirection(Vector2 direction)
