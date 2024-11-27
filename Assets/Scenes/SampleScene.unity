@@ -7481,7 +7481,7 @@ TilemapCollider2D:
   m_Enabled: 1
   serializedVersion: 3
   m_Density: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: 19c452bb12eb15a4c835c1dc69d64466, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -7848,7 +7848,7 @@ Rigidbody2D:
   m_LinearDamping: 0
   m_AngularDamping: 0
   m_GravityScale: 0
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: 19c452bb12eb15a4c835c1dc69d64466, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
