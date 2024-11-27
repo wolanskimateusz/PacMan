@@ -7875,6 +7875,7 @@ MonoBehaviour:
   - {fileID: -854346276578218440, guid: 732b8825d652888409ff9857f847b357, type: 3}
   - {fileID: -6116695336936236789, guid: 81297b7126573524ca9fb4ed6dc25de8, type: 3}
   - {fileID: 967018795972314641, guid: 39e912542add8354baa6f0adc04a80b9, type: 3}
+  - {fileID: -6116695336936236789, guid: 81297b7126573524ca9fb4ed6dc25de8, type: 3}
   animationTime: 0.25
   loop: 1
 --- !u!114 &1877520136

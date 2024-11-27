@@ -39,7 +39,7 @@ public class PlayerMovement : MonoBehaviour
     void FixedUpdate()
     {
         Vector2 position = this.rb.position;
-        this.rb.MovePosition(this.direction * this.speed * Time.fixedDeltaTime);
+        this.rb.MovePosition(position + this.direction * this.speed * Time.fixedDeltaTime);
     }
 
     public void SetDirection(Vector2 direction)
