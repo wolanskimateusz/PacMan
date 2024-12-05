@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class GhostChase
+public class GhostChase : MonoBehaviour
 {
     
 }

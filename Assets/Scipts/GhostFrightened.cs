@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class GhostFrightened
+public class GhostFrightened : MonoBehaviour
 {
     
 }
