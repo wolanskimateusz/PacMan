@@ -1,7 +1,7 @@
 using UnityEngine;
 using System.Threading;
 using System.Diagnostics;
-
+[RequireComponent(typeof(Rigidbody2D))]
 public class GhostMovement : MonoBehaviour
 {
 
